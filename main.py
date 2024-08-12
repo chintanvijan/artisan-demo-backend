@@ -13,6 +13,7 @@ warnings.filterwarnings('ignore')
 import nltk
 from nltk.stem import WordNetLemmatizer
 nltk.download('popular', quiet=True) # for downloading packages
+nltk.download('punkt_tab')
 
 f=open('chatbot.txt','r',errors = 'ignore')
 raw=f.read()
