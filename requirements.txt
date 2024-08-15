@@ -23,7 +23,7 @@ markdown-it-py==3.0.0
 MarkupSafe==2.1.5
 mathparse==0.1.2
 mdurl==0.1.2
-nltk==3.8.2
+nltk==3.8.1
 numpy==2.0.1
 Pint==0.24.3
 pydantic==2.8.2
