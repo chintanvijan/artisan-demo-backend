@@ -2,8 +2,6 @@ annotated-types==0.7.0
 anyio==4.4.0
 appdirs==1.4.4
 certifi==2024.7.4
-ChatterBot==1.0.4
-chatterbot-corpus==1.2.0
 click==8.1.7
 dnspython==2.6.1
 email_validator==2.2.0
