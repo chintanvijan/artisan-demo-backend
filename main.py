@@ -7,6 +7,7 @@ import warnings
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from fastapi.middleware.cors import CORSMiddleware
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -70,6 +71,16 @@ else:
     ssl._create_default_https_context = _create_unverified_https_context
 
 app = FastAPI()
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class Query(BaseModel):
     query: str
